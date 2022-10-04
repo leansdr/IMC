@@ -21,6 +21,8 @@ const calcularIMC = () => {
   imcElement.innerText = imc.toFixed(1);
   if (imc < 18.5) {
     situationElement.innerText = "Magreza";
+    situationElement.style.color = "#b73f38";
+    imcElement.style.color = "#b73f38";
   } else if (imc >= 18.5 && imc <= 24.9) {
     situationElement.innerText = "Normal";
     situationElement.style.color = "#087829";
@@ -65,10 +67,6 @@ const fieldTextClear = () => {
 };
 
 const showResults = () => {
-  container.classList.toggle("hide");
-};
-
-const backPrincipal = () => {
   container.classList.toggle("hide");
 };
 
