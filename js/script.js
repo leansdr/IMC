@@ -95,7 +95,7 @@ inputWeight.addEventListener("focus", () => {
 });
 
 btnCalculate.addEventListener("click", () => {
-  if (verificarCampoVazio() === true) {
+  if (verificarCampoVazio()) {
     msg.innerText = "É necessário preencher os campos antes de prosseguir!";
   } else {
     calcularIMC();
